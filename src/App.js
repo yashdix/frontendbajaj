@@ -20,7 +20,7 @@ function App() {
       }
 
       // Send POST request to server
-      const res = await axios.post('http://localhost:5000/bfhl', jsonInput);
+      const res = await axios.post('https://backendbajaj-production.up.railway.app/bfhl', jsonInput);
       setResponse(res.data);
       setError(null);
     } catch (err) {
